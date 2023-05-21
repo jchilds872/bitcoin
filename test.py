@@ -9,7 +9,7 @@ for l in open('data_test.txt','r'):
    ii+=i
    oo+=o
    for x in range(4+i,4+i+o):
-    vv=int(float(v[x])*100000000)
+    vv=float(v[x])
     if vv>0: d[v[x+o][-16:]]=(b,vv); bb+=vv
    for x in range(4,4+i): d.pop(v[x][-16:], None)
    
