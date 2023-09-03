@@ -16,7 +16,7 @@ func main() {
 	dt := time.Now()
 	fmt.Println("Script started at: ", dt.String())
 
-	a := swiss.NewMap[string, struct{}](42)
+	m := swiss.NewMap[string, struct{}](42)
 	readFile, err := os.Open("./200k")
 	if err != nil {
 		fmt.Println("Error opening file: ", err)
